@@ -9,7 +9,7 @@ class CVector {
  y = b;
 };
  
- CVector operator + (CVector param) {
+ CVector operator - (CVector param) {
  CVector temp;
  temp.x = x - param.x;
  temp.y = y - param.y;
