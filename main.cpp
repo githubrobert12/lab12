@@ -12,10 +12,10 @@ class CVector {
  y = b;
 };
 
- CVector operator + (CVector param) {
+ CVector operator - (CVector param) {
  CVector temp;
- temp.x = x + param.x;
- temp.y = y + param.y;
+ temp.x = x - param.x;
+ temp.y = y - param.y;
  return (temp);
 };
 
@@ -37,7 +37,7 @@ int main () {
  CVector b (1,2);
  CVector c;
  CVector d;
- c = a + b;
+ c = a - b;
  d = a;
  cout << c.x << "," << c.y<<endl;
  cout << d.x << "," << d.y<<endl;
